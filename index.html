@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input type="search" placeholder="Enter city name" autofocus="on" autocomplete="off" id="city-input" class="form-control shadow-sm">
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm w-100" id="search-button">
+            </div>
+            <div class="col-3">
+              <button class="btn btn-success w-100" id="current-location-button"> Current </button>
+            </div>
+          </div>
+        </form>
+      <h4 class="p-2 border-city" id="city-choice">
+        <span id="current-city">Sydney</span>
+        <br>
+        <span id="currently"> Tuesday 17:27 </span>
+      </h4>
+    <div class="row">
+      <div class="col-6">
+        <span class="temperature" id="temperature"> 27 </span>
+        <span class="details"><strong>°C</strong></span>
+    </div>
+        <div class="col-6">
+<ul>
+  <li>
+    Precipitation: 
+    <span id="precipitation">10</span>%
+  </li>
+  <li>
+    Humidity: 
+    <span id="humidity">82</span>%
+  </li>
+  <li>
+    Wind: 
+    <span id="wind">6</span>km/h
+  </li>
+        </div>
+      </div>
+
+      <div class="weekdays">
+        <div class="row">
+          <div class="col"><strong>MON</strong></div>
+          <div class="col"><strong>TUE</strong></div>
+          <div class="col"><strong>WED</strong></div>
+          <div class="col"><strong>THU</strong></div>
+          <div class="col"><strong>FRI</strong></div>
+        </div>
+      </div>
+      <hr />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+            />
+          </div>
+          <div class="col">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png"
+            />
+          </div>
+          <div class="col">
+            <img src="https://ssl.gstatic.com/onebox/weather/48/rain.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col"><strong>27°</strong> 21°</div>
+          <div class="col"><strong>26°</strong> 20°</div>
+          <div class="col"><strong>28°</strong> 21°</div>
+          <div class="col"><strong>22°</strong> 18°</div>
+          <div class="col"><strong>24°</strong> 17°</div>
+        </div>
+      </div>
+
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>
