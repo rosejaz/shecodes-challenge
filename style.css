@@ -1,0 +1,43 @@
+.temperature {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.details {
+  font-size: 20px;
+  position: relative;
+  top: -14px;
+}
+
+h4 {
+  text-align: center;
+  padding: 13px;
+  border-radius: 5px;
+  margin: 30px 120px;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.weekdays {
+  margin-top: 80px;
+}
+
+li {
+  list-style: none;
+}
+
+.border-city {
+  border: 2px solid burlywood;
+}
+
+#search-button {
+  background-color: rgb(200, 84, 132);
+  border-color: rgb(200, 84, 132);
+}
+
+#current-location-button {
+  background-color: burlywood;
+  border-color: burlywood;
+}
